@@ -114,11 +114,11 @@ Since this project uses Native PHP and MySQL, you will need a local server envir
 5.  **Run the App:**
     * Start Apache and MySQL in XAMPP/WAMP.
     * Open your browser and visit: `http://localhost/Project-Web/`
-    * Log in to all the different dashboards with the credentials you will find in the `Login Credentials` file in this repo.
+    * Log in to all the different dashboards with the credentials you will find in the `LoginCredentials.txt` file in this repo.
 
 ## Contributors
 
-This project was designed and built as a group assignment for the **[University of Patras]** Computer Engineering and Informatics Department.
+This project was designed and built as a group assignment for the **Computer Engineering and Informatics Department** of the **University of Patras** .
 
 * **Vasilopoulos Panagiotis** - *[ Back-End for Secretary & Main Page Logic - Front-End of the Application (Except for the Student Dashboard)]*
 * **Psaltiras Panagiotis** - *[ Back-End for Professor Logic - MySQL Database]* - [GitHub Profile](https://github.com/Pan4g10tis)
