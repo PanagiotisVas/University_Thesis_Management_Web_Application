@@ -82,7 +82,7 @@ Since this project uses Native PHP and MySQL, you will need a local server envir
    ```
   
 2.  **Move the folder:**
-    * Copy the project folder.
+    * Make sure the name of the folder is `Web Application Project`. Copy the project folder.
     * Paste it inside your local server's root directory:
         * **XAMPP:** `C:\xampp\htdocs\`
         * **WAMP:** `C:\wamp64\www\`
