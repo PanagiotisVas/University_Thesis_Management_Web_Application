@@ -53,23 +53,23 @@ The codebase is structured to separate logic (PHP), webpages (HTML), styling (CS
 ## UI Examples
 * Home Page
 
-![Home Page](screenshots/professor_theses_page.png)
+![Home Page](UI Pictures/HomeScreen.jpeg)
 
 * Administration Dashboard
 
-![Administration Dashboard](screenshots/thesis_assignment.png)
+![Administration Dashboard](UI%20Pictures/AdministrationDashboard.jpeg)
 
 * Professor Dashboard
 
-![Professor Dashboard](screenshots/thesis_assignment.png)
+![Professor Dashboard](UI%20Pictures/ProfessorDashboard.jpeg)
 
 * Student Dashboard
 
-![Student Dashboard](screenshots/thesis_assignment.png)
+![Student Dashboard](UI%20Pictures/StudentDashboard.jpeg)
 
 * Database Schema
 
-![DB Schema](screenshots/db_schema.png)
+![DB Schema](UI%20Pictures/DatabaseSchema.jpeg)
 
 
 ## How to Run Locally
