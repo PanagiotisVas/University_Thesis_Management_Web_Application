@@ -1,0 +1,56 @@
+{
+  "students": [
+    {
+      "id": "54",
+      "name": "Dimitris",
+      "surname": "Kostopoulos",
+      "student_number": "10434003",
+      "street": "Panepistimiou",
+      "number": "20",
+      "city": "Athens",
+      "postcode": "10564",
+      "father_name": "Ioannis",
+      "landline_telephone": "2106549871",
+      "mobile_telephone": "6987456123",
+      "email": "st10434003@upnet.gr"
+    },
+    {
+      "id": "55",
+      "name": "Sophia",
+      "surname": "Kanelopoulou",
+      "student_number": "10434004",
+      "street": "Venizelou",
+      "number": "33",
+      "city": "Thessaloniki",
+      "postcode": "54624",
+      "father_name": "Panagiotis",
+      "landline_telephone": "2310678954",
+      "mobile_telephone": "6932154789",
+      "email": "st10434004@upnet.gr"
+    }
+  ],
+  "professors": [
+    {
+      "id": "56",
+      "name": "Nikolaos",
+      "surname": "Vasileiou",
+      "email": "nikolaos@math.univ",
+      "topic": "Applied Mathematics",
+      "landline": "2610897654",
+      "mobile": "6954123789",
+      "department": "Mathematics",
+      "university": "University of Patras"
+    },
+    {
+      "id": "57",
+      "name": "Eirini",
+      "surname": "Mavridou",
+      "email": "eirini@physics.univ",
+      "topic": "Quantum Mechanics",
+      "landline": "2107896543",
+      "mobile": "6908745213",
+      "department": "Physics",
+      "university": "National and Kapodistrian University of Athens"
+    }
+  ]
+}
