@@ -53,7 +53,7 @@ The codebase is structured to separate logic (PHP), webpages (HTML), styling (CS
 ## UI Examples
 * Home Page
 
-![Home Page](UI Pictures/HomeScreen.jpeg)
+![Home Page](UI%20Pictures/HomeScreen.jpeg)
 
 * Administration Dashboard
 
