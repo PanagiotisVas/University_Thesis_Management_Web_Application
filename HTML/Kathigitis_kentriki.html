@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathigitis</title>
+    <link rel="stylesheet" href="..\CSS\Header.css">
+    <link rel="stylesheet" href="..\CSS\Application.css">
+    <link rel="stylesheet" href="..\CSS\Kathigitis.css">
+    <link rel="stylesheet" href="../CSS/Globals.css">
+    <link rel="stylesheet" href="..\CSS\overlay.css">
+    <script src="https://kit.fontawesome.com/2e7b94d5fd.js" crossorigin="anonymous"></script>
+    <script> var htmlFile = "Kathigitis"</script>
+    <script src="../JavaScript/login_check.js"></script>
+</head>
+<body>
+    
+    <!-- Dynamic Header -->
+    <div id="header"></div> <!-- Placeholder for the dynamically loaded header -->
+    
+    <div class="button-container">
+        <button class="sidebar-button" id="Button4">
+            <span class="button-icon"><i class="fa-solid fa-list-check" style="color: #541619;"></i></span>
+            Manage Theses
+        </button>
+        <button class="sidebar-button" id="Button2">
+            <span class="button-icon"><i class="fa-solid fa-envelope" style="color: #541619;"></i></span>
+            Thesis Requests
+        </button>
+        <button class="sidebar-button" id="Button3">
+            <span class="button-icon"><i class="fa-solid fa-file" style="color: #541619;"></i></span>
+            Thesis Assignment
+        </button>
+        <button class="sidebar-button" id="Button1">
+            <span class="button-icon"><i class="fa-solid fa-chart-simple" style="color: #541619;"></i></span>
+            Statistics
+        </button>
+        <button class="sidebar-button" id="Button5">
+            <span class="button-icon"><i class="fa-solid fa-user" style="color: #541619;"></i></span>
+            My Info
+        </button>
+    </div>
+
+    <div class="main-screen">
+        <div id="content"></div>
+        <div id="buttonContainer" style="display: flex;"></div>
+        <div id="chartContainer1" style="display: none;">
+            <canvas id="thesisChart"></canvas>
+        </div>
+        <div id="chartContainer2" style="display: none;">
+            <canvas id="gradeChart"></canvas>
+        </div>
+        <div id="chartContainer3" style="display: none;">
+            <canvas id="timeChart"></canvas>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <div id="overlay-content">
+            <span class="close-btn">&times;</span>
+            <div id="details"></div>
+        </div>
+    </div>
+
+    
+    <script src="../JavaScript/Username_fetch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JavaScript/Kathigitis_kentriki.js"></script>
+    <script src="../JavaScript/Kathigitis_statistika.js"></script>
+    <script src="../JavaScript/Kathigitis_prosklisi.js"></script>
+    <script src="../JavaScript/Kathigitis_anathesi.js"></script>
+    <script src="../JavaScript/Kathigitis_diaheirisi.js"></script>
+    <script src="../JavaScript/Buttons.js"></script>
+    <script src="../JavaScript/Header.js"></script>
+</body>
+</html>

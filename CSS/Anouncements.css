@@ -1,0 +1,342 @@
+#title { 
+    margin-top: 30px;
+    text-align: center;
+    font-family: var(--font-family); 
+    font-size: 35px; 
+    color: var(--text-color); 
+}
+
+.date-search-container{
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    display: flex;
+    width: 80%; 
+    align-items: center; 
+    gap: 30px; /* Adjust gap as needed */
+    justify-content: space-evenly;
+    flex-wrap: nowrap; 
+    margin: 20px auto;
+    text-wrap: 0; 
+} 
+
+.date-input {
+    flex: 1; /* Adjust width as needed */
+    font-family: inherit; /* Keep the font settings as they are */
+    font-size: inherit;
+    color: var(--secondary-red);
+    border: 3px solid var(--secondary-red);
+    padding: 5px; 
+    background-color: var(--text-color);
+} 
+
+.search-button { 
+    width: 15%;
+    border-radius: 50px; /* Rounded corners */
+    background-color: var(--secondary-red); /* Background color */
+    padding: 5px 5px; /* Padding for better spacing */
+    text-align: center; /* Center the text inside the button */
+    font-family: inherit; /* Keep the font settings as they are */
+    font-size: inherit; /* Keep font size as is */
+    color: #fff; /* Ensure text color remains visible */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.search-button:hover {
+    background-color: #e0dede; /* Slightly lighter red on hover */
+    color: var(--secondary-red)
+}
+
+
+/* Style for the #content container */
+#content {
+    flex: 1;
+    margin-top: auto;
+    width: 90%; /* Adjust width */
+    /*overflow-y: auto; /* Enable scrolling for content only */
+    margin: 20px auto; /* Center horizontally*/ 
+    padding: 20px;
+    background-color: #1e1e1e; /* Darker background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Style for the list*/ 
+#content ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for list items */
+#content li {
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    margin-bottom: 10px; /* Space between items */
+    background-color: #2e2e2e; /* Background color*/ 
+    color: #fff; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow */
+    transition: background-color 0.3s ease; /* Smooth hover effect*/ 
+}
+
+/* Style for clickable spans */
+#content .clickable {
+    cursor: pointer;    
+}
+
+#content li:hover{
+    transform: scale(1.012); /* Slight zoom effect */
+    background-color: #444; /* Darker background on hover */
+}
+
+/* Style for clickable spans (now an anchor tag) */
+#content li a.clickable {
+    display: flex; /* Make the anchor span the entire list item */
+    justify-content: space-between;
+    text-decoration: none; /* Remove underline from the text */
+    color: inherit; /* Inherit the text color from the parent */
+    padding: 15px; /* Ensure the padding matches the li's padding */
+    border-radius: 5px; /* Keep the rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+.details-container {
+    font-family: var(--font-family);
+    font-size: var(--font-size-medium);
+    display: none;
+    position: relative; /* Ensure positioning within this container */
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-top: 4px solid var(--secondary-red);
+    margin-top: 5px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+}
+
+#export-buttons-container {
+    font-family: var(--font-family); 
+    font-size: var(--font-size-small);
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px; /* Adjust gap as needed */
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.export-button {  
+    width: 25%;
+    border-radius: 20px; /* Rounded corners */
+    background-color: var(--secondary-red); /* Background color */
+    padding: 5px 5px; /* Padding for better spacing */
+    text-align: center; /* Center the text inside the button */
+    font-family: inherit; /* Keep the font settings as they are */
+    font-size: inherit; /* Keep font size as is */
+    color: #fff; /* Ensure text color remains visible */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.export-button:hover {
+    background-color: #e0dede; /* Slightly lighter red on hover */
+    color: var(--secondary-red)
+}
+
+/*CSS for the Grammateia Overview Details*/
+.members-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+    background: #2e2e2e;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.members-container p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.detail-content {
+    padding-top: 50px; /* Space for the members container */
+}
+
+.detail-header {
+    margin-bottom: 16px;
+}
+
+
+
+
+/*CSS for the Grammateia Thesis Settings Details*/
+
+.details-id, .details-description, .details-link, .details-enddate, .details-cancel-date, .details-reason {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.upload-section, .cancel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    text-align: center;
+    margin: 30px auto;
+    margin-left: 30px;
+    padding: 15px;
+}
+
+/* Confirmation Assembly Number Display Styling */
+.assembly-number-display {
+    margin: 10px 0 15px 0;
+    padding: 8px 14px;
+    background: #232b36;
+    border-left: 5px solid var(--secondary-red);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.assembly-number-value {
+    font-weight: bold;
+    color: white;
+    font-size: var(--font-size-small);
+}
+
+/* Buttons */
+.upload-assembly, .cancel-thesis {
+    justify-content: center;
+    text-align: center;
+    align-self: flex-start;
+    width: 45%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.mark-completed {
+    justify-content: center;
+    text-align: center;
+    align-self: flex-end;
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.mark-completed:disabled,
+.cancel-thesis:disabled,
+[id^="cancel-thesis-btn-"]:disabled {
+    background-color: gray !important;
+    cursor: not-allowed !important;
+    opacity: 0.6;
+}
+
+.btn-primary {
+    background-color: #0e6cd8;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0550a7;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: darkred;
+}
+
+.btn-success {
+    background-color: green;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: darkgreen;
+}
+
+/* Inputs and Labels */
+.label-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.input-field, .file-input {
+    width: 50%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+}
+
+
+.details-link a {
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.details-link a:hover {
+    color: var(--secondary-red);
+}
+
+.details-cancel_assembly_num {
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    display: flex;
+    gap: 50px;
+    
+}
+
+/* Container for cards 
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping 
+    gap: 20px; /* Space between cards 
+    justify-content: center;
+}
+
+/* Individual card styles 
+.card {
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 250px; /* Fixed width 
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect 
+    background-color: #444;
+}*/
+

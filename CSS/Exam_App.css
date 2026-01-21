@@ -1,0 +1,158 @@
+
+/* Main Container */
+.container3 {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+/* Header Styling */
+.container3 h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Label Styling */
+.container3 label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: #555;
+}
+
+/* Flex container for Exam Date and Time */
+#examDateTimeContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#examDateTimeContainer input,
+#examDateTimeContainer select {
+    width: 48%; /* Flex items take up 48% of the space */
+}
+
+
+/* Input Fields */
+input[type="date"],
+input[type="time"],
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    transition: border 0.3s ease;
+}
+
+
+/* Exam Time Container (Hour, Minute, AM/PM) */
+#examTimeContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+#examTimeContainer select {
+    width: 32%; /* Adjust to fit three options in the container */
+}
+
+#examTimeContainer h3{
+    padding-bottom: 2%;
+}
+
+/* Apply Button Styling */
+#examSub {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color:var(--secondary-red);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#examSub:disabled {
+    background-color: lightgrey;
+    cursor: not-allowed;
+}
+
+#examSub:hover:enabled {
+    background-color:#e0dede;
+    color: var( --secondary-red);
+}
+
+/* Additional Options (Classroom/Meeting Room) */
+#additionalOptions {
+    margin-bottom: 20px;
+}
+
+/* Flexbox Layout for Classroom or Meeting Room Selection */
+#additionalOptions select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+#additionalOptions input{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+#successmsg{
+    text-align: center;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    #examDateTimeContainer {
+        flex-direction: column;
+    }
+
+    #examDateTimeContainer input,
+    #examDateTimeContainer select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #examTimeContainer {
+        flex-direction: column;
+    }
+
+    #examTimeContainer select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #examSub {
+        width: 100%;
+        padding: 15px;
+    }
+}

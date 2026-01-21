@@ -1,0 +1,310 @@
+#title { 
+    margin-top: 30px;
+    text-align: center;
+    font-family: var(--font-family); 
+    font-size: 35px; 
+    color: var(--text-color); 
+}
+
+.label {
+    font-family: var(--font-family); 
+    font-size: var(--font-size-medium);
+    font: bold
+}
+
+input {
+    width: 50%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+}
+
+#details p {
+    font-family: var(--font-family); 
+    font-size: var(--font-size-medium);
+    font: bold;
+}
+
+.h2 {
+    font-size: var(--font-size-medium);
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+h4 {
+    font-size: var(--font-size-medium);
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+#content {
+    flex: 1;
+    margin-top: auto;
+    width: 90%; 
+    /*overflow-y: auto; /* Enable scrolling for content only */
+    margin: 20px auto; /* Center horizontally*/ 
+    padding: 20px;
+    background-color: #1e1e1e; /* Darker background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Style for the list*/ 
+#content ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for list items */
+#content li {
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    margin-bottom: 10px; /* Space between items */
+    background-color: #2e2e2e; /* Background color*/ 
+    color: #fff; /* Text color */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow */
+    transition: background-color 0.3s ease; /* Smooth hover effect*/ 
+}
+
+/* Style for clickable spans */
+#content .clickable {
+    cursor: pointer;    
+}
+
+#content li:hover{
+    transform: scale(1.012); /* Slight zoom effect */
+    background-color: #444; /* Darker background on hover */
+}
+
+/* Style for clickable spans (now an anchor tag) */
+#content li a.clickable {
+    display: flex; 
+    justify-content: space-between;
+    text-decoration: none; 
+    color: inherit;
+    padding: 15px; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+#overlay-content {
+    padding: 20px;
+    align-items: center;
+
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    padding: 20px;
+    width: 80%;
+    margin-left: 20px;
+}
+
+
+.thesis-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#buttonContainer {
+    text-align: center;
+    background: transparent;
+    padding: 10px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+/*Kathigitis Statistics*/
+.dynamic-button {
+    width: 25%;
+    border-radius: 20px;
+    background-color: var(--secondary-red);
+    padding: 5px 5px;
+    text-align: center;
+    align-self: center;
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    color: #fff; 
+    transition: background-color 0.3s ease;
+}
+
+.dynamic-button:hover {
+    background-color: #e0dede;
+    color: var(--secondary-red)
+}
+
+#thesisChart, #gradeChart, #timeChart {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+
+/*Kathigitis Proskliseis Overlay Buttons*/
+.overlay-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.action-btn {
+    width: 25%;
+    border-radius: 20px;
+    background-color: var(--secondary-red);
+    padding: 5px 5px;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    color: #fff; 
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #e0dede;
+    color: var(--secondary-red)
+}
+
+
+
+/*Kathigitis Apodosi Diplomatikis*/
+#InsertButton {
+    display: flex;
+    width: 40%;
+    border-radius: 20px;
+    background-color: var(--secondary-red);
+    padding: 5px 5px;
+    justify-content: center;
+    justify-self: center;
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom: 40px;
+    color: #fff;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+#InsertButton:hover {
+    background-color: #e0dede;
+    color: var(--secondary-red)
+    
+}
+
+
+/*Kathigitis Diaxeirish*/
+
+#to-be-examined, #save-note {
+    display: flex;
+    width: 40%;
+    border-radius: 20px;
+    background-color: var(--secondary-red);
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    padding: 5px 5px;
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: 20px;
+    color: #fff;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+} 
+
+#to-be-examined:hover, #save-note:hover {
+    background-color: #e0dede;
+    color: var(--secondary-red)   
+}
+
+
+form {
+    width: 100%; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 50%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+}
+
+form label {
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+}
+
+form button {
+    display: flex;
+    width: 40%;
+    border-radius: 20px;
+    background-color: var(--secondary-red);
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    padding: 5px 5px;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e0dede;
+    color: var(--secondary-red)   
+}
+
+textarea {
+    width: 80%;
+    height: 30%;
+    padding: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+}
+
+#announce-presentation, #open_grading, #cancel-assignment, #searchStudent, #confirmAssignment {
+    display: flex;
+    width: 40%;
+    border-radius: 20px;
+    background-color: var(--secondary-red);
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    padding: 5px 5px;
+    justify-content: center;
+    justify-self: center;
+    margin-bottom: 20px;
+    color: #fff;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+#announce-presentation:hover, #open_grading:hover, #cancel-assignment:hover, #searchStudent:hover, #confirmAssignment:hover {
+    background-color: #e0dede;
+    color: var(--secondary-red)   
+}
+

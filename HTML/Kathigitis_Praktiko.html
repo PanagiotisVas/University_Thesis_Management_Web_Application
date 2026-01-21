@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πρακτικό Συνέδριασης</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            font-size: 8px; /* Set table font size here */
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <script src="../JavaScript/login_check.js"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="center">ΤΜΗΜΑ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ</h1>
+<h2 class="center">ΠΡΟΓΡΑΜΜΑ ΠΡΟΠΤΥΧΙΑΚΩΝ ΣΠΟΥΔΩΝ</h2>
+<h3 class="center">ΤΜΗΜΑΤΟΣ ΜΗΧΑΝΙΚΩΝ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ</h3>
+
+<h2 class="center">ΠΡΑΚΤΙΚΟ ΣΥΝΕΔΡΙΑΣΗΣ</h2>
+<h3 class="center">ΤΗΣ ΤΡΙΜΕΛΟΥΣ ΕΠΙΤΡΟΠΗΣ ΓΙΑ ΤΗΝ ΠΑΡΟΥΣΙΑΣΗ ΚΑΙ ΚΡΙΣΗ ΤΗΣ ΔΙΠΛΩΜΑΤΙΚΗΣ ΕΡΓΑΣΙΑΣ</h3>
+
+<table>
+    <tr>
+        <th>Φοιτητής:</th>
+        <th class="Full-Name">ονοματεπώνυμο φοιτητή/φοιτήτριας</th>
+        <th class="AM">(ΑΜ)</th>
+    </tr>
+    <tr>
+        <td>Θέμα:</td>
+        <td class="Thesis-Title">τίτλος διπλωματικής εργασίας</td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Τριμελής Επιτροπή</th>
+        <th class="Supervisor-Name">ονοματεπώνυμο επιβλεπόντος/ουσας</th>
+        <th class="Prof-1-Name">ονοματεπώνυμο μέλους</th>
+        <th class="Prof-2-Name">ονοματεπώνυμο μέλους</th>
+    </tr>
+</table>
+
+<p>
+    <span>Η συνεδρίαση πραγματοποιήθηκε ημέρα</span>
+    <span id="Date" style="font-weight: bold"></span> 
+    <span> με ώρα έναρξης</span> 
+    <span id="Time" style="font-weight: bold"></span>
+</p>
+
+<table>
+    <tr>
+        <th>Στην συνεδρίαση είναι παρόντα τα μέλη της Τριμελούς Επιτροπής</th>
+    </tr>
+    <tr>
+        <th class="Supervisor-Name">ονοματεπώνυμο επιβλεπόντος/ουσας</th>
+    </tr>
+    <tr>
+        <th class="Prof-1-Name">ονοματεπώνυμο μέλους</th>
+        
+    </tr>
+    <tr>
+        <th class="Prof-2-Name">ονοματεπώνυμο μέλους</th>    
+    </tr>
+</table>
+<p>
+    <span>οι οποίοι ορίστηκαν στην γενική συνέλευση με</span>
+    <span style="font-weight: bold;">Αριθμό Πρωτοκόλλου</span>
+    <span class="Gen_Assembly_Number"></span>
+</p>
+<p>Μετά την ολοκλήρωση της παρουσίασης της διπλωματικής εργασίας, υποβάλλονται ερωτήσεις από τα μέλη της Τριμελούς Επιτροπής και τους άλλους παρουσιασμένους, προκειμένου να διαμορφώνουν σαφή άποψη για το περιεχόμενο της εργασίας και για την ενισχύμενη συγκρότηση του εξεταζόμενου ατόμου.</p>
+
+<p>
+    <span>Μετά το τέλος της παρουσίασης της εργασίας και την παροχή απαντήσεων στις ερωτήσεις ο φοιτητής/τρια</span>
+    <span class="Full-Name" style="font-weight: bold;">ονοματεπώνυμο φοιτητή/τριας</span>
+    <span>αποχωρεί.</span>
+</p>
+<h3>Με βάση τον Κανονισμό Ανάθεσης και Αξιολόγησης Διπλωματικών Εργασιών, η αξιολόγηση και η βαθμολόγηση της εργασίας από τους εξεταστές έγινε στη βάση των παρακάτω κριτηρίων:</h3>
+<ol>
+    <li>Ποιότητα της εργασίας και βαθμός εκπλήρωσης των στόχων της όπως αυτοί καθορίστηκαν κατά την έναρξη της εργασίας. (βάρος κριτηρίου: 60%)</li>
+    <li>Χρονικό διάστημα εκπόνησης της (βάρος κριτηρίου: 15%). Το κριτήριο αυτό βαθμολογείται με άριστα μόνον όταν η ΔΕ έχει εκπονηθεί σε διάστημα μικρότερο του 1.5 χρόνου (εκτός αν υπάρχουν λόγοι ανωτέρας βίας ή αν έχει παραταθεί σε συμφωνία με τον Επιβλέποντα Καθηγητή).</li>
+    <li>Ποιότητα και πληρότητα του κειμένου της εργασίας και των υπολοίπων παραδοτέων της (βάρος κριτηρίου: 15%).</li>
+    <li>Ποιότητα της παρουσίασης (βάρος κριτηρίου: 10%).</li>
+</ol>
+
+<table>
+    <tr>
+        <th>Άτομο</th>
+        <th>Κριτήριο 1 (60%)</th>
+        <th>Κριτήριο 2 (15%)</th>
+        <th>Κριτήριο 3 (15%)</th>
+        <th>Κριτήριο 4 (10%)</th>
+        <th>Βαθμός</th>
+    </tr>
+    <tr>
+        <td class="Supervisor-Name">ονοματεπώνυμο επιβλεπόντος/ουσας</td>
+        <td id="Sup_Quality">0</td>
+        <td id="Sup_Time">0</td>
+        <td id="Sup_Text">0</td>
+        <td id="Sup_Presentation">0</td>
+        <td id="Sup_Grade">0</td>
+    </tr>
+    <tr>
+        <td class="Prof-1-Name">ονοματεπώνυμο μέλους</td>
+        <td id="Member2_Quality">0</td>
+        <td id="Member2_Time">0</td>
+        <td id="Member2_Text">0</td>
+        <td id="Member2_Presentation">0</td>
+        <td id="Member2_Grade">0</td>
+    </tr>
+    <tr>
+        <td class="Prof-2-Name">ονοματεπώνυμο μέλους</td>
+        <td id="Member3_Quality">0</td>
+        <td id="Member3_Time">0</td>
+        <td id="Member3_Text">0</td>
+        <td id="Member3_Presentation">0</td>
+        <td id="Member3_Grade">0</td>
+    </tr>
+    
+</table>
+
+<p style="font-weight: bold">Τελική βαθμολογία: 0,0 (Μηδέν)</p>
+
+<p>
+    <span>Η Τριμελής Επιτροπή, προτείνει να προχωρήσει η διαδικασία για να ανακηρύξει τον</span>
+    <span class="Full-Name" style="font-weight: bold;">ονοματεπώνυμο φοιτητή/φοιτήτριας</span>
+    <span> σε διπλωματούχο του Προγράμματος Σπουδών του «ΤΜΗΜΑΤΟΣ ΜΗΧΑΝΙΚΩΝ, ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ ΚΑΙ ΠΛΗΡΟΦΟΡΙΚΗΣ ΠΑΝΕΠΙΣΤΗΜΙΟΥ ΠΑΤΡΩΝ» και να του απονέμει το Δίπλωμα Μηχανικού Η/Υ το οποίο αναγνωρίζεται ως Ενιαίος Τίτλος Σπουδών Μεταπτυχιακού Επιπέδου.</span> 
+</p>
+
+
+</div>
+
+<button id="downloadPdf">Download PDF</button>
+<script>
+    function getQueryParam(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    window.thesisId = getQueryParam("thesisId");
+</script>
+<script src="../JavaScript/Kathigitis_praktiko.js"></script>
+<script src="../JavaScript/manuscript_upload.js"></script>
+</script>
+
+</body>
+</html>

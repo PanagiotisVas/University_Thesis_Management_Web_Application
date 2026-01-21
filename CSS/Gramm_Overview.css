@@ -1,0 +1,25 @@
+
+/* Colors for the different status values in the list*/
+.status-active { 
+    color: rgb(13, 72, 173); /* Color for ACTIVE status */ 
+} 
+
+.status-to-be-examined { 
+    color: orange; /* Color for TO BE EXAMINED status */
+}
+
+.status-cancelled { 
+    color: red; /* Color for CANCELED status */
+}
+
+.status-completed { 
+    color: green; /* Color for CANCELED status */
+}
+
+.date-search-container{
+    display: none;
+}
+
+#export-buttons-container{
+    display: none;
+} 

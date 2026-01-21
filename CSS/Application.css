@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    font-family: var(--font-family);
+    color:#fff;
+    overflow-y: auto;
+    /*overflow: hidden; /* Prevent body from scrolling */
+}
+
+:root {
+    --content-offset: var(--header-height); /* Offset for content below the header */
+}
+
+/*Sidebar*/
+.button-container {
+    width: 25%;
+    margin-top: var(--content-offset);
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 0;
+    background-color: var(--background-black);
+    gap: 20px;
+    /*overflow: hidden; /* Prevent sidebar scrolling */
+}
+
+/*Buttons in Sidebar*/
+button {
+    font-family: var(--font-family);
+    color:rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+    font-size: var(--font-size-small);
+    width: 100%; /* Make the button span the full width of the sidebar */
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding for better spacing */
+    position: relative; /* Needed for the pseudo-element */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-black);
+    color:white;
+}
+
+/* Active state */
+button.active {
+    background-color: var(--primary-black); /* Lighter background when clicked */
+    color:white;
+}
+
+/* Ensure icons align properly */
+.button-icon {
+    margin-right: 10px; /* Add space between icon and text */
+    display: inline-flex;
+    align-items: center; /* Vertically center icons with text */
+}
+
+/* Icon styles */
+.button-icon i {
+    font-size: 20px; /* Adjust icon size */
+    transition: transform 0.3s ease; /* Add hover animation */
+}
+
+/* Hover effect for icons */
+button:hover .button-icon i {
+    transform: scale(1.15); /* Enlarge icon on hover */
+}
+
+/*Main screen*/
+.main-screen {
+    margin-top: var(--header-height);
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    flex: 1;
+    padding: 10px 10px;
+    background-color: var(--primary-black);
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*overflow: hidden; /* Prevent scrolling outside content */  
+}
+
+
+.content {
+    display: flex;
+    padding: 0px;
+    border-radius: 10px;
+}

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammateia</title>
+    <link rel="stylesheet" href="..\CSS\Header.css">
+    <link rel="stylesheet" href="..\CSS\Application.css">
+    <link rel="stylesheet" href="..\CSS\Anouncements.css">
+    <link rel="stylesheet" href="..\CSS\Gramm_Overview.css">
+    <link rel="stylesheet" href="..\CSS\Gramm_Upload.css">
+    <link rel="stylesheet" href="..\CSS\Globals.css">
+    <script src="https://kit.fontawesome.com/2e7b94d5fd.js" crossorigin="anonymous"></script>
+    <script> var htmlFile = "Grammateia"</script>
+    <script src="../JavaScript/login_check.js"></script>
+</head>
+<body data-default-content="Grammateia_Overview">
+
+     <!-- Dynamic Header -->
+     <div id="header"></div> <!-- Placeholder for the dynamically loaded header -->
+    
+    
+     <div class="button-container">
+            <button class="sidebar-button active" data-content="Grammateia_Overview">                 
+                <span class="button-icon"><i class="fa-solid fa-eye" style="color: #541619;"></i></span>
+                Overview
+            </button>
+            <button class="sidebar-button" data-content="Grammateia_ThesisSettings">               
+                <span class="button-icon"><i class="fa-solid fa-gear" style="color: #541619;"></i></span>
+                Thesis Settings
+            </button>
+            <button class="sidebar-button" data-content="Grammateia_UploadData">
+                <span class="button-icon"><i class="fa-solid fa-upload" style="color: #541619;"></i></span>
+                Upload
+            </button>
+    </div>
+
+    <div class="main-screen">
+        <h1 id="title">Theses Presentations Announcements</h1>
+        <div class="date-search-container"> 
+            <label for="start-date">Start Date:</label> 
+            <input type="date" id="start-date" class="date-input"> 
+            <label for="end-date">End Date:</label> 
+            <input type="date" id="end-date" class="date-input">
+            <button id="filter-button" class="search-button">Search</button>
+        </div>
+        <div id="content"></div>
+    </div>
+
+    <script src="../JavaScript/Grammateia_Overview.js"></script>
+    <script src="../JavaScript/Grammateia_ThesisSettings.js"></script>
+    <script src="../JavaScript/Grammateia_UploadData.js"></script>
+    <script src="../JavaScript/Header.js"></script>
+    <script src="../JavaScript/SidebarButtons.js"></script>    
+    <script src="../JavaScript/Username_fetch.js"></script>
+</body>
+</html>

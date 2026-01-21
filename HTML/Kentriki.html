@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kentriki</title>
+    <link rel="stylesheet" href="/Project-Web/Web%20Application%20Project/CSS/Header.css">
+    <link rel="stylesheet" href="/Project-Web/Web%20Application%20Project/CSS/Application.css">
+    <link rel="stylesheet" href="/Project-Web/Web%20Application%20Project/CSS/Anouncements.css">
+    <link rel="stylesheet" href="/Project-Web/Web%20Application%20Project/CSS/Globals.css">
+    <script src="https://kit.fontawesome.com/2e7b94d5fd.js" crossorigin="anonymous"></script>
+    <script> var htmlFile = "Kentriki"</script>
+</head>
+<body>
+     <!-- Dynamic Header -->
+     <div id="header"></div> <!-- Placeholder for the dynamically loaded header -->
+
+    <div class="button-container">
+        <a href="https://www.ceid.upatras.gr/en/staff/faculty/" target="_blank">
+            <button>                 
+                <span class="button-icon"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #541619;"></i></span>
+                CEID Faculty Members
+            </button>
+        </a>
+        <a href="https://www.ceid.upatras.gr/en/staff/supporting-staff/" target="_blank">
+            <button>                
+                <span class="button-icon"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #541619;"></i></span>
+                CEID Supporting Staff
+            </button>
+        </a>
+        <a href="/Project-Web/Web Application Project/HTML/Files/Κανονισμός_Διπλωματικών_Εργασιών.pdf" download="Κανονισμός_Διπλωματικών_Εργασιών.pdf">
+            <button>
+                <span class="button-icon"><i class="fa-solid fa-download" style="color: #541619;"></i></span>
+                Thesis Regulation
+            </button>
+        </a>
+    </div>
+
+    <div class="main-screen">
+        <h1 id="title">Theses Presentations Announcements</h1>
+        <div class="date-search-container"> 
+            <label for="start-date">Start Date:</label> 
+            <input type="date" id="start-date" class="date-input"> 
+            <label for="end-date">End Date:</label> 
+            <input type="date" id="end-date" class="date-input">
+            <button id="filter-button" class="search-button">Search</button>
+        </div>
+        <div id="content"></div>
+        <div id="export-buttons-container">
+            <button id="export-json" class="export-button">Export as JSON</button> 
+            <button id="export-xml" class="export-button">Export as XML</button>
+        </div>
+    </div>
+
+    <script src="/Project-Web/Web%20Application%20Project/JavaScript/Anakoinoseis.js"></script>
+    <script src="/Project-Web/Web%20Application%20Project/JavaScript/Header.js"></script> 
+</body>
+</html>

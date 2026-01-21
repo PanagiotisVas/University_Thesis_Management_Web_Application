@@ -1,0 +1,57 @@
+/* FilePathContainer - Parent container */
+.FilePathContainer ,.NimertisLinkContainer {
+    width: 100%; /* Adjust width to control the space the container takes */
+    height: 100%;
+    padding: 10px; /* Added padding for spacing around the container */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    background-color: var(--primary-black); /* Light background for contrast */
+    border-radius: 5px; /* Rounded corners for the container */
+    margin-bottom: 20px; /* Adds spacing from other elements */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    align-content:center ;
+}
+
+/* Input styling inside FilePathContainer */
+.FilePathContainer input ,.NimertisLinkContainer input {
+    width: 60%; /* Make input take up the full width of its parent */
+    padding: 8px 10px; /* Slightly more padding for better user experience */
+    margin: 8px 0; /* Adjusted margin for consistent spacing */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 5px; /* Rounded corners for the input */
+    font-size: 16px; /* Increase font size for better readability */
+    background-color: #fff; /* White background for the input */
+    transition: border 0.3s ease; /* Smooth transition when border color changes */
+}
+
+/* Input focus state */
+.FilePathContainer input:focus ,.NimertisLinkContainer input:focus {
+    border-color: darkred; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Heading inside FilePathContainer */
+.FilePathContainer h3 ,.NimertisLinkContainer h3 {
+    margin: 8px 0; /* Adjusted margin for consistent spacing */
+    font-size: 18px; /* Larger font size for better visibility */
+    color: var(--text-color); /* Dark text for readability */
+}
+
+#FileExplorerButton,#UploadButton, #UploadNimertisButton
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-red);
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5% 4%;
+    width: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+#FileExplorerButton:hover ,#UploadButton:hover ,#UploadNimertisButton:hover
+{
+    background-color: #e0dede; /* Slightly lighter red on hover */
+    color: var(--secondary-red)
+}

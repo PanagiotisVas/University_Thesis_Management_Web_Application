@@ -1,0 +1,142 @@
+/* Resetting some default styles */
+body, h2, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 20vh;
+    --header-padding: 2vw; /* Padding inside the header */
+    --nav-spacing: 2vw; /* Minimum space between nav items */
+    --logo-spacing: 1rem; /* Space between the logo and navigation links */
+    --logo-height: 17vh; /* Logo height relative to the viewport */
+}
+
+.header {
+    position: fixed;
+    height: var(--header-height);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, var(--secondary-red), var(--background-black)); /* Gradient background */
+    padding: 0 var(--header-padding); /* Horizontal padding */
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    font-family: var(--font-family);
+    font-size: var(--font-size-medium);
+    color: #fff; /* White text color for visibility */
+}
+
+/* Logo styling */
+.logo {
+    margin-right: var(--logo-spacing); /* Space between logo and nav links */
+}
+
+.logo {
+    height:var(--logo-height); /* Scale the logo dynamically */
+    width: auto; /* Maintain the aspect ratio */
+    display: block;
+    justify-content: left;
+}
+
+a.logo {
+    text-decoration: none; /* Remove underline for the clickable logo */
+}
+
+h3:hover {
+    color: white;
+}
+
+a {
+    color: inherit;  
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: var(--font-size-medium);
+}
+
+a:hover {
+    color: #e0dede; /* Light gray hover effect */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    align-items: center; /* Vertically align nav links */
+    gap: var(--nav-spacing); /* Add consistent spacing between links */
+}
+
+/* Individual navigation links */
+.nav-links a {
+    color: inherit;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: var(--font-size-small);
+    padding: 0.5rem; /* Add vertical padding for better clickability */
+}
+
+/* Adjust hover effect */
+.nav-links a:hover {
+    color: #e0dede;
+}
+
+/* Login button */
+.nav-links .login {
+    margin-left: var(--nav-spacing); /* Add spacing between last nav link and login */
+    border-radius: 20px; /* Rounded corners */
+    background-color: var(--secondary-red); /* Background color */
+    padding: 5px 20px; /* Padding for better spacing */
+    text-align: center; /* Center the text inside the button */
+    font-family: inherit; /* Keep the font settings as they are */
+    font-size: inherit; /* Keep font size as is */
+    color: #fff; /* Ensure text color remains visible */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the login button */
+.nav-links .login:hover {
+    background-color: #e0dede; /* Slightly lighter red on hover */
+    color: var(--secondary-red)
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+
+    :root {
+        --header-height: 12vh; /* Increase header height for smaller screens */
+        --logo-height: 12vh; /* Increase logo height slightly */
+        --nav-spacing: 1.5vw; /* Reduce spacing between nav items */
+    }
+    
+    .header {
+        height: auto; /* Adjust header height for wrapping */
+        padding: 0.5rem var(--header-padding);
+    }
+
+    .header .nav-links {
+        flex: wrap; /* Disable equal spacing for smaller screens */
+        justify-content: flex-end; /* Align links to the left */
+        gap: 0.5rem; /* Reduce spacing for smaller screens */
+    }
+
+    .header .login {
+        margin-left: 0; /* Remove extra spacing for small screens */
+    }
+}
+
+/* Extra-small screens */
+@media (max-width: 480px) {
+    :root {
+        --header-height: 15vh; /* Taller header for extra-small screens */
+        --logo-height: 10vh; /* Slightly larger logo for extra visibility */
+        --nav-spacing: 1rem; /* Further reduce spacing */
+    }
+
+    .nav-links a {
+        font-size: 0.9rem; /* Reduce font size slightly */
+    }
+}
