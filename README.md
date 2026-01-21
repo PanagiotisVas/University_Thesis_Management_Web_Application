@@ -78,7 +78,7 @@ Since this project uses Native PHP and MySQL, you will need a local server envir
 
 1.  **Clone the repository:**
    ```bash
-   git clone [https://github.com/vasizaf/University-Thesis-Manager-Web-App.git](https://github.com/vasizaf/University-Thesis-Manager-Web-App.git)
+   git clone [https://github.com/PanagiotisVas/University_Thesis_Management_Web_Application.git](https://github.com/PanagiotisVas/University_Thesis_Management_Web_Application.git)
    ```
   
 2.  **Move the folder:**
@@ -95,7 +95,7 @@ Since this project uses Native PHP and MySQL, you will need a local server envir
 4.  **Configure Connection:**
     * Ensure the `$username` (usually `root`) and `$password` (usually empty for XAMPP) match your local server setup.
    
-   **In this Project** The database connection settings are defined individually in each PHP file. You will need to update them globally to match your environment.
+   **In this Project:** The database connection settings are defined individually in each PHP file. You will need to update them globally to match your environment.
 
    **How to update the password for all files at once:**
 
@@ -109,7 +109,7 @@ Since this project uses Native PHP and MySQL, you will need a local server envir
        * For custom setups: `$dbpassword = "your_password";`
    5.  Click **Replace All**.
 
-   **Warning:** Ensure you replace the specific string `$dbpassword = "root";` to avoid accidentally changing other parts of the code.
+   ⚠️ **Warning:** Ensure you replace the specific string `$dbpassword = "root";` to avoid accidentally changing other parts of the code.
 
 5.  **Run the App:**
     * Start Apache and MySQL in XAMPP/WAMP.
@@ -122,7 +122,7 @@ This project was designed and built as a group assignment for the **[University 
 
 * **Vasilopoulos Panagiotis** - *[ Back-End for Secretary & Main Page Logic - Front-End of the Application (Except for the Student Dashboard)]*
 * **Psaltiras Panagiotis** - *[ Back-End for Professor Logic - MySQL Database]* - [GitHub Profile](https://github.com/Pan4g10tis)
-* **Zannis Georgios** - *[Back-End for Student Logic - Front-End for Student Dashboard - Server Configuration]* - [GitHub Profile](https://github.com/AlkisChatz)
+* **Zannis Georgios** - *[Back-End for Student Logic - Front-End for Student Dashboard - Server Configuration]* - [GitHub Profile](https://github.com/GeoZann)
 
 ---
 Note: This project is for educational purposes and demonstrates full-stack CRUD capabilities without the use of high-level frameworks.
